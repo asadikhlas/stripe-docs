@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from 'react'
 import { scroller } from "react-scroll";
 
@@ -18,9 +19,9 @@ const SideBar = () => {
                     <a>Stripe API</a>
                 </h2>
                 <ul>
-                    <li className="pointer"><a button onClick={() => scrollToElements("introduction")}><strong>Introduction</strong></a></li>
-                    <li className="pointer"><a button onClick={() => scrollToElements("authentication")}>Authentication</a></li>
-                    <li className="pointer" ><a button onClick={() => scrollToElements("errors")}>Errors</a>
+                    <li className="pointer"><a onClick={() => scrollToElements("introduction")}><strong>Introduction</strong></a></li>
+                    <li className="pointer"><a onClick={() => scrollToElements("authentication")}>Authentication</a></li>
+                    <li className="pointer" ><a onClick={() => scrollToElements("errors")}>Errors</a>
                         <ul>
                             <li><a className="pointer">Handling Errors</a></li>
                         </ul>

@@ -1,3 +1,4 @@
+{/* eslint-disable */ }
 import React from 'react';
 import SideBar from './Components/SideBar/SideBar';
 import ApiReference from './Components/ApiReference/API_Reference';
