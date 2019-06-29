@@ -10,31 +10,31 @@ const App = () => {
   return (
     <main className="flex container">
       <SideBar />
-    <div className="book-page">
-      <article className="markdown">
-        <br />
-        <br />
+      <div className="book-page">
+        <article className="markdown">
+          <br />
+          <br />
 
-        <Element name="introduction">
-        <ApiReference />
-        </Element>
-        <hr />
-        <br />
-        <br />
-        <Element name="authentication">
-        <Authentication />
-        </Element>
+          <Element name="introduction">
+            <ApiReference />
+          </Element>
+          <hr />
+          <br />
+          <br />
+          <Element name="authentication">
+            <Authentication />
+          </Element>
 
-        <hr />
-        <br />
-        <br />
-        <Element name="errors">
-          <Errors />
-        </Element>
-        <hr />
-      </article>
-    </div>
-  </main>
+          <hr />
+          <br />
+          <br />
+          <Element name="errors">
+            <Errors />
+          </Element>
+          <hr />
+        </article>
+      </div>
+    </main>
   )
 }
 

@@ -10,6 +10,7 @@ const SideBar = () => {
             offset: -150
         });
     };
+
     return (
         <aside className="book-menu fixed">
             <nav>
