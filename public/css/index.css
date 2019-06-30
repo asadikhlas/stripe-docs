@@ -272,8 +272,23 @@ border-radius: 10px;
 }
 
 
+.current-active { 
+  color: red
+}
+
+
 .text-bold { 
     font-weight: bold
+}
+
+
+.sign-btn { 
+  background: dodgerblue;
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  color: white;
 }
 
 .markdown table { 

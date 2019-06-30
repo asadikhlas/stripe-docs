@@ -4,8 +4,7 @@ import SideBar from './Components/SideBar/SideBar';
 import ApiReference from './Components/ApiReference/API_Reference';
 import Authentication from './Components/Authentication/Authentication';
 import Errors from './Components/Errors/Errors';
-import { Element } from "react-scroll";
-
+import { Element, Link } from "react-scroll";
 
 const App = () => {
   return (
@@ -16,20 +15,20 @@ const App = () => {
           <br />
           <br />
 
-          <Element name="introduction">
+          <Element name="introduction" >
             <ApiReference />
           </Element>
           <hr />
           <br />
           <br />
-          <Element name="authentication">
+          <Element name="authentication" >
             <Authentication />
           </Element>
 
           <hr />
           <br />
           <br />
-          <Element name="errors">
+          <Element name="errors" >
             <Errors />
           </Element>
           <hr />
