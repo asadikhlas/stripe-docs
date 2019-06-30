@@ -18,22 +18,24 @@ class SideBar extends Component {
                         <a>Stripe API</a>
                     </h2>
                     <ul>
-                        <li className="pointer">
+                        
+                            <li className="pointer">
                             <Link
                                 spy={true}
                                 to="introduction"
                                 activeClass="active"
                                 smooth={true}>
-                                <strong>Introduction</strong>
+                                Introduction
                             </Link>
                         </li>
+                        
                         <li className="pointer">
                             <Link
                                 spy={true}
                                 to="authentication"
                                 activeClass="active"
                                 smooth={true}>
-                                <strong>Authentication</strong>
+                                Authentication
                             </Link>
                         </li>
                         <li className="pointer">
@@ -43,15 +45,18 @@ class SideBar extends Component {
                                 activeClass="active"
                                 smooth={true}
                                 onClick={() => this.setState({ errors: !this.state.errors })}>
-                                <strong>Errors</strong>
+                                Errors
                             </Link>
                             {this.state.errors && <ul>
                                 <li><a className="pointer">Handling Errors</a></li>
                             </ul>}
 
                         </li>
+
+
+                        <h3><b>Core Resources</b></h3>
                         <li onClick={() => this.setState({ balance: !this.state.balance })}>
-                            <a className="pointer"><strong>Balance</strong></a>
+                            <a className="pointer">Balance</a>
                             {this.state.balance && <ul>
                                 <li>
                                     <a className="pointer">The Balance Object</a>
@@ -70,6 +75,180 @@ class SideBar extends Component {
                                 </li>
                             </ul>}
                         </li>
+
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                Charges
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                Customers
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                Disputes
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                Events
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                Files
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                File Links
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                PaymentIntents
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                Payouts
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                Products
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                Refunds
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                activeClass="active"
+                                smooth={true}
+                            >
+                                Tokens
+                            </Link>
+                            <ul>
+                                <li><a className="pointer">Handling Errors</a></li>
+                            </ul>
+
+                        </li>
+
                     </ul>
                     <div className="sign-btn">
                         Signin
@@ -80,10 +259,5 @@ class SideBar extends Component {
     }
 }
 
-// const SideBar = () => {
-//     return (
-
-//     )
-// }
 
 export default SideBar
