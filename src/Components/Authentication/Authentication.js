@@ -37,14 +37,14 @@ const Authentication = () => {
         <br />
         <div>
           <div className="black-header" colSpan={2} align="left">
-            <p className="black-header-text">GLOBAL API KEY</p>
+            <p style={{ textAlign: 'justify', display: 'flex', justifyContent: 'center', alignItems: 'center' }} className="black-header-text">GLOBAL API KEY</p>
             <pre className="black-back"><code>1{"  "}const stripe = require("stripe")("sk_test_4eC39HqLyjWDarjtT1zdp7dc");{"\n"}{"                                        "}</code></pre>
           </div>
         </div>
         <br />
         <div>
           <div className="black-header" colSpan={2} align="left">
-            <p className="black-header-text">HTTP STATUS CODE SUMMARY</p>
+            <p style={{ textAlign: 'justify', display: 'flex', justifyContent: 'center', alignItems: 'center' }} className="black-header-text">HTTP STATUS CODE SUMMARY</p>
             <pre className="black-back"><code>1{"  "}stripe.charges.retrieve("ch_1Eq4Oy2eZvKYlo2Czs4jqw3t", {"{"}{"   "}{"\n"}2{"  "}api_key: "sk_test_4eC39HqLyjWDarjtT1zdp7dc"{"\n"}3{"  "}{"}"});{"\n"}{"                                                "}</code></pre>
           </div>
         </div>

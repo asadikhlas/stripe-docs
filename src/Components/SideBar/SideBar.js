@@ -18,8 +18,8 @@ class SideBar extends Component {
                         <a>Stripe API</a>
                     </h2>
                     <ul>
-                        
-                            <li className="pointer">
+
+                        <li className="pointer">
                             <Link
                                 spy={true}
                                 to="introduction"
@@ -28,7 +28,7 @@ class SideBar extends Component {
                                 Introduction
                             </Link>
                         </li>
-                        
+
                         <li className="pointer">
                             <Link
                                 spy={true}
@@ -55,23 +55,52 @@ class SideBar extends Component {
 
 
                         <h3><b>Core Resources</b></h3>
-                        <li onClick={() => this.setState({ balance: !this.state.balance })}>
-                            <a className="pointer">Balance</a>
+
+
+                        <li className="pointer">
+                            <Link
+                                spy={true}
+                                to="balance"
+                                activeClass="active"
+                                smooth={true}
+                                onClick={() => this.setState({ balance: !this.state.balance })}
+                            >
+                                Balance
+                            </Link>
+
                             {this.state.balance && <ul>
                                 <li>
-                                    <a className="pointer">The Balance Object</a>
+                                    <Link
+                                        spy={true}
+                                        to = "object"
+                                        activeClass="active"
+                                        smooth={true}
+                                        className="pointer">The Balance Object</Link>
                                 </li>
                                 <li>
-                                    <a className="pointer">The Balance Transaction Object</a>
+                                    <Link
+                                        spy={true}
+                                        to="transaction"
+                                        activeClass="active"
+                                        smooth={true}
+                                        className="pointer">The Balance Transaction Object</Link>
                                 </li>
                                 <li>
-                                    <a className="pointer">Retrieve Balance</a>
+                                    <Link
+                                        spy={true}
+                                        to="retrieve"
+                                        activeClass="active"
+                                        smooth={true}
+                                        className="pointer">Retrieve Balance</Link>
                                 </li>
+                               
                                 <li>
-                                    <a className="pointer">Retrieve a balance transaction</a>
-                                </li>
-                                <li>
-                                    <a className="pointer">List all balance history</a>
+                                    <Link
+                                        spy={true}
+                                        to="listall"
+                                        activeClass="active"
+                                        smooth={true}
+                                        className="pointer">List all balance history</Link>
                                 </li>
                             </ul>}
                         </li>
@@ -86,9 +115,6 @@ class SideBar extends Component {
                             >
                                 Charges
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -101,9 +127,6 @@ class SideBar extends Component {
                             >
                                 Customers
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -118,9 +141,6 @@ class SideBar extends Component {
                             >
                                 Disputes
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -134,9 +154,6 @@ class SideBar extends Component {
                             >
                                 Events
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -151,9 +168,6 @@ class SideBar extends Component {
                             >
                                 Files
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -167,9 +181,6 @@ class SideBar extends Component {
                             >
                                 File Links
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -182,9 +193,6 @@ class SideBar extends Component {
                             >
                                 PaymentIntents
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -197,9 +205,6 @@ class SideBar extends Component {
                             >
                                 Payouts
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -214,9 +219,6 @@ class SideBar extends Component {
                             >
                                 Products
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -229,9 +231,6 @@ class SideBar extends Component {
                             >
                                 Refunds
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 
@@ -243,9 +242,6 @@ class SideBar extends Component {
                             >
                                 Tokens
                             </Link>
-                            <ul>
-                                <li><a className="pointer">Handling Errors</a></li>
-                            </ul>
 
                         </li>
 

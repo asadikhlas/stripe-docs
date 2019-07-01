@@ -17,41 +17,52 @@ const App = () => {
       <SideBar />
       <div className="book-page">
         <article className="markdown">
-          <br />
-          <br />
+
+
           <Element name="introduction" >
             <ApiReference />
           </Element>
-          <hr />
-          <br />
-          <br />
+
+
+
           <Element name="authentication" >
             <Authentication />
           </Element>
-          <hr />
-          <br />
-          <br />
+
+
+
           <Element name="errors" >
             <Errors />
           </Element>
-          <hr />
-          <Balance />
-          <br />
-          <br />
-          <hr />
-          <BalanceObject />
-          <br />
-          <br />
-          <hr />
-          <BalanceTransactionObject />
-          <br />
-          <br />
-          <hr />
-          <RetrieveBalance />
-          <br />
-          <br />
-          <hr />
-          <ListAllBalanceHistory />
+
+
+          <Element name="balance">
+            <Balance />
+          </Element>
+
+
+
+          <Element name="object">
+            <BalanceObject />
+          </Element>
+
+
+
+          <Element name="transaction">
+            <BalanceTransactionObject />
+          </Element>
+
+
+
+          <Element name="retrieve" >
+            <RetrieveBalance />
+          </Element>
+
+
+
+          <Element name="listall" >
+            <ListAllBalanceHistory />
+          </Element>
         </article>
       </div>
     </main>
